@@ -86,7 +86,7 @@ onScreenKeyboard.addEventListener("click", (e) => {
       img[missed].src = "images/lostHeart.png";
       missed++;
     }
-    checkWin();
+    checkWin(); // Call a checkLetter function
   }
 });
 
