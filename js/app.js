@@ -9,17 +9,6 @@ const img = document.querySelectorAll(".tries img");
 // Missed Variable
 let missed = 0;
 
-// Storing movieLists in an array
-const movieLists = [
-  "Hacksaw Ridge",
-  "Into the Wild",
-  "The Terminator",
-  "Legend",
-  "Joker",
-  "The Lion King",
-  "Toy Story",
-];
-
 // Attaching event listener to the 'Start Game' button
 startButton.addEventListener("click", () => {
   overlay.style.display = "none"; // Start game
