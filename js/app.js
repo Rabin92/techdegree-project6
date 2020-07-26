@@ -75,7 +75,7 @@ onScreenKeyboard.addEventListener("click", (e) => {
       img[missed].src = "images/lostHeart.png";
       missed++;
     }
-    checkWin(); // Call a checkLetter function
+    checkWin(); // Call a checkWin function
   }
 });
 
@@ -93,7 +93,7 @@ const checkWin = () => {
     startButton.textContent = "Play Again";
   } else if (missed > 4) {
     overlay.classList.replace("start", "lose");
-    title.innerHTML = `You loose! <img class="sad_emoji" src="images/sad.png" alt="sad_emoji"><br>Would you like to try again? `;
+    title.innerHTML = `You loose! <img class="sad_emoji" src="images/sad.png" alt="sad_emoji"><br>Would you like to try again?`;
     overlay.style.display = "flex";
     startButton.textContent = "Try Again";
   }
